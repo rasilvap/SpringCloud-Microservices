@@ -12,7 +12,7 @@ import com.springboot.app.item.models.Item;
 import com.springboot.app.item.models.service.ItemService;
 
 @RestController
-@Qualifier("ItemServiceFeign")
+@Qualifier("ServiceRestTemplate")
 public class ItemController {
 	
 	@Autowired
