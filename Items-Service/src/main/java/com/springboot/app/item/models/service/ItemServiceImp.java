@@ -30,7 +30,7 @@ public class ItemServiceImp implements ItemService {
 	public Item findById(Long id, Integer quantity) {
 		Map<String, String> pathVars = new HashMap<>();
 		pathVars.put("id", id.toString());
-		Product product = restClient.getForObject("http://localhost:8001//get/{id}", Product.class, pathVars);
+		Product product = restClient.getForObject("http://localhost:8001/get/{id}", Product.class, pathVars);
 		return new Item(product, quantity);
 	}
 
